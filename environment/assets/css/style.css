@@ -1,0 +1,386 @@
+/*----------------------------GENERAL PAGE-----------------------------------*/
+html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/leaf-sketch.png");
+  background-size: cover;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*----------------------------IMPORTED FONTS-----------------------------------*/
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: url(../fonts/Gotham-Bold.woff);
+}
+
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/Gotham-Book.woff);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(../fonts/Gotham-Light.woff);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/Gotham-Medium.woff);
+}
+
+@font-face {
+  font-family: NouvelleVague-Black;
+  src: url(../fonts/NouvelleVague-Black.woff);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regulark.woff);
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../fonts/OpenSans-SemiBold.woff);
+}
+
+/*----------------------------FONT STYLES-----------------------------------*/
+
+h1 {
+    font-family: NouvelleVague-Black;
+    color: white;
+}
+h2 {
+  font-family: Gotham-Bold;
+  color: #515348;
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+
+p {
+  font-family: OpenSans-SemiBold;
+  color: #515348;
+  font-size: 0.75em;
+}
+
+label {
+  font-family: OpenSans-SemiBold;
+  color: #515348;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.alert-txt {
+  font-family: Gotham-Bold;
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+.phase-2-article h1 {
+  color: green;
+  font-size: 3.5em;
+}
+
+.registration h3 {
+  color: #515348;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin :20px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.form-control {
+  font-family: OpenSans-SemiBold;
+  color: #515348;
+  font-size: 0.75em;
+}
+
+.registration h2 {
+  color: #71b26f;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.rotate {
+  writing-mode: vertical-lr;
+  display: inline;
+  transform: rotate(180deg) translateX(-5px) !important;
+}
+
+.sideline-lt {
+  font-family: Gotham-Medium;
+  letter-spacing: 4px;
+  font-size: 0.60em;
+  color: #515348;
+  position: absolute;
+  top: -50px;
+ }
+
+.sideline-rt {
+  font-family: Gotham-Medium;
+  letter-spacing: 4px;
+  font-size: 0.60em;
+  color: #68ad66;
+}
+
+
+
+/*---------------------------------BUTTONS-----------------------------------*/
+.reg-btn {
+  color: white;
+  background-color: #69ac65;
+  border-radius: 0px;
+  font-family: Gotham-Medium;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.btn {
+  border-color: #558e52;
+}
+
+.btn:hover {
+  background-color: #558e52 !important;
+  border-color: #558e52;
+}
+
+.btn-social {
+  border-radius: 50%;
+  background-color: #69ac65;
+  color: white !important;
+}
+
+.btn-social:hover {
+  border-radius: 50%;
+  background-color: #558e52;
+  color: white !important;
+}
+
+.submit-btn {
+  background-color: #02804e;
+  color: white;
+  border-radius: 0px;
+  font-family: Gotham-Medium;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.submit-btn:hover {
+  background-color: #035635 !important;
+}
+
+/*----------------------------HERO SECTION-----------------------------------*/
+.jumbotron {
+    background-color: rgba(0,0,0,0);
+    background-image: url("../images/leaves.jpg");
+    border-radius: 0px !important;
+    min-height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------ARTICLE SECTION-----------------------------------*/
+/*------------------RESPONSIVE-----------------*/
+@media (max-width: 768px) { 
+  .hide-sm {
+  display: none;
+} }
+
+.phase-2-article {
+  padding-right: 199px;
+}
+
+/*------------------RESPONSIVE-----------------*/
+@media (max-width: 992px) { 
+  .phase-2-article {
+  padding-right: 0px;
+} }
+
+.registration-title {
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: grey;
+ margin-bottom: 50px;
+}
+
+#article-section {
+  margin: 60px 0px;
+}
+
+/*----------------------------ARTICLE IMAGE-----------------------------------*/
+.overlay {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  background-color: #20710ada;
+  height:100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0.75s ease;
+}
+
+.anim3:hover .overlay {
+  opacity: 0.2;
+}
+
+.ctr {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.overlay-txt {
+  color:white !important;
+  font-size: 2em;
+  font-family: Gotham-Light;
+  text-transform: uppercase;
+  position: absolute;
+  top: 43%;
+  right: 30%;
+}
+
+/*----------------------------FORM SECTION-----------------------------------*/
+.form-box {
+  border-radius: 0px !important;
+  padding-right: -5px !important;
+  padding-left: -5px !important; 
+  border: 1px solid #5c5c5c;
+}
+
+.form-padding {
+  padding-right: 5px !important;
+  padding-left: 5px !important; 
+}
+
+@media (max-width: 768px) { 
+  .form-padding {
+  padding-right: 5px !important;
+  padding-left: 5px !important; 
+  padding-bottom: 10px !important;
+}
+  .form-group {
+  margin-bottom: 0rem !important; 
+    
+  }
+  
+}
+
+#registration-form-section {
+  margin-bottom: 60px;
+}
+
+#inlineRadio2 {
+  width:3em;
+  height:3em;
+}
+
+#inlineRadio1 {
+  width:3em;
+  height: 3em;
+}
+
+#blankRadio {
+  width:3em;
+  height: 3em;
+}
+
+#fname_error_message {
+    color: blue;
+}
+
+#lname_error_message {
+    color: blue;
+
+}
+
+#email_error_message {
+    color: blue;
+}
+
+#phone_error_message {
+    color: blue;
+}
+
+#city_error_message {
+    color: blue;
+}
+
+#pcode_error_message {
+    color: blue;
+}
+
+#message_user {
+    display: none;
+}
+
+/*----------------------------FOOTER SECTION-----------------------------------*/
+
+.footer {
+  background-color: #848484 !important;
+  background-image: url("../images/leaves-footer.png") !important;
+  background-position: 0px -650px;
+ /* background-size: cover;*/
+  background-repeat: no-repeat;
+}
+
+.footer-logo {
+  float: none !important;
+}
+
+.txt-footer {
+   text-align: center;
+}
+
+.v-separator {
+  border-left: none;
+  border-width: 0px;
+}
+
+.social {
+  padding: 5px 15px;
+}
+
+/*------------------RESPONSIVE-----------------*/
+@media (min-width: 768px) { 
+  .footer-logo {
+  float: right !important;
+}
+
+.txt-footer {
+   text-align: left;
+}
+
+.v-separator {
+  border-left: solid;
+  border-width: 1px;
+  border-color: white;
+  }
+}
+
+/*----------------------------COPYRIGHT SECTION-----------------------------------*/
+
+.txt-copy {
+  color: white;
+  margin: 50px 0px 0px 0px;
+  font-size: 0.5em;
+  opacity: 0.7;
+}
+
+.txt-copy a {
+  color: white;
+}
+
+
+
+
