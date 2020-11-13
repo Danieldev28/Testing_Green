@@ -72,7 +72,7 @@ endif; //input field empty
 ?>
 <?php
  // Connect to the database
-  $dbc = mysqli_connect('localhost', 'danieldev28', 'Z1dUUEA8dz28B03Q', 'registration_db')
+  $dbc = mysqli_connect('', '', '', '')
       or die('Error connecting to MySQL server.'); 
 
 
